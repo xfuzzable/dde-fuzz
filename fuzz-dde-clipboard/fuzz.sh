@@ -1,1 +1,1 @@
-xfuzz fuzz ./build/dde-clipboard/dde-clipboard -pdde -mclipboard
+xfuzz fuzz ./build/dde-clipboard -pdde -mclipboard 

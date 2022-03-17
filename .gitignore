@@ -1,4 +1,5 @@
 build/
 dde-*
 xfuzz-test-*
+*.pri
 
