@@ -14,9 +14,8 @@ apps=(dde-calendar
     dde-polkit-agent
     dde-printer
     dde-qt-dbus-factory
-    dde-session
-    dde-session-ui
     dde-session-shell
+    dde-session-ui
     dde-wayland
 )
 
