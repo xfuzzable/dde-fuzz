@@ -20,11 +20,11 @@ cd fuzz-package-name
 
 |dde-app-name|原生是否可编译|xfuzz是否可编译|测试版本|驱动是否已编写|
 |---|---|---|---|---|
-|dde-calendar|未知|未知|5.8.27|否|
+|dde-calendar|是|否|5.8.27|否|
 |dde-clipboard|是|是|5.15.0102.6|是|
-|dde-control-center|未知|未知|5.5.11.5|否|
-|dde-device-formatter|未知|未知|0.0.1.12|否|
-|dde-dock|未知|未知|5.5.9|否|
+|dde-control-center|是|否|5.5.11.5|否|
+|dde-device-formatter|是|是|0.0.1.12|是|
+|dde-dock|是|否|5.5.9|否|
 |dde-file-manager|未知|未知|5.5.3|否|
 |dde-introduction|未知|未知|5.6.0.45|否|
 |dde-kwin|未知|未知|5.4.19|否|
