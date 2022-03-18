@@ -1,0 +1,1 @@
+xfuzz fuzz ./build/build/dde-device-formatter -pdde -mdevice-formatter
