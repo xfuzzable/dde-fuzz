@@ -25,12 +25,12 @@ cd fuzz-package-name
 |dde-control-center|是|否|5.5.11.5|否|
 |dde-device-formatter|是|是|0.0.1.12|是|
 |dde-dock|是|否|5.5.9|否|
-|dde-file-manager|未知|未知|5.5.3|否|
-|dde-introduction|未知|未知|5.6.0.45|否|
+|dde-file-manager|是|未知|5.5.3|否|
+|dde-introduction|是|未知|5.6.0.45|否|
 |dde-kwin|未知|未知|5.4.19|否|
 |dde-launcher|未知|未知|5.5.6|否|
-|dde-network-utils|未知|未知|5.4.13|否|
-|dde-polkit-agent|未知|未知|5.5.3|否|
+|dde-network-utils|是|是|5.4.13|否|
+|dde-polkit-agent|是|是|5.5.3|是|
 |dde-printer|未知|未知|0.9.2|否|
 |dde-qt-dbus-factory|未知|未知|5.5.5|否|
 |dde-session-shell|未知|未知|5.5.9|否|
