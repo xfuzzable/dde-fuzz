@@ -11,7 +11,7 @@ QApplication *app;
 
 extern "C" void xfuzz_before_test(){
     qputenv("QT_QPA_PLATFORM", "offscreen");
-    static char* argv[] = {"./dde-device-formatter", nullptr};
+    static char* argv[] = {"./dde-device-formatter-xfuzz", nullptr};
     int argc = 1;
     app = new QApplication(argc,argv);
 }
