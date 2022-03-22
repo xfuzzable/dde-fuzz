@@ -25,7 +25,7 @@ cd fuzz-package-name
 |dde-control-center|是|否|5.5.11.5|否|
 |dde-device-formatter|是|是|0.0.1.12|是|
 |dde-dock|是|否|5.5.9|否|
-|dde-file-manager|是|未知|5.5.3|否|
+|dde-file-manager|是|是|5.5.3|是|
 |dde-introduction|是|未知|5.6.0.45|否|
 |dde-kwin|未知|未知|5.4.19|否|
 |dde-launcher|未知|未知|5.5.6|否|
