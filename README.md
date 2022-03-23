@@ -29,7 +29,7 @@ cd fuzz-package-name
 |dde-introduction|是|未知|5.6.0.45|否|
 |dde-kwin|未知|未知|5.4.19|否|
 |dde-launcher|是|是|5.5.6|是|
-|dde-network-utils|是|是|5.4.13|否|
+|dde-network-utils|是|是|5.4.13|是|
 |dde-polkit-agent|是|是|5.5.3|是|
 |dde-printer|未知|未知|0.9.2|否|
 |dde-qt-dbus-factory|未知|未知|5.5.5|否|
