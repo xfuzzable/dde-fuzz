@@ -4,5 +4,5 @@ xfuzz-test-*
 *.pri
 __pychche__
 *.pyc
-
-
+.vscode
+.build

@@ -1,0 +1,1 @@
+xfuzz fuzz ./build/dde-launcher-xfuzz -pdde -mlauncher
