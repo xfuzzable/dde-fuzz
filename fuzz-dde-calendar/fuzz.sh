@@ -1,0 +1,1 @@
+xfuzz fuzz ./build/dde-calendar-xfuzz -pdde -mcalenddar
