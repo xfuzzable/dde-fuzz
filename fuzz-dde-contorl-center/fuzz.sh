@@ -1,0 +1,1 @@
+xfuzz fuzz ./build/dde-control-center-xfuzz -pdde -mcontrol-center
