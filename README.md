@@ -22,7 +22,7 @@ cd fuzz-package-name
 |---|---|---|---|---|
 |dde-calendar|是|否|5.8.27|否|
 |dde-clipboard|是|是|5.15.0102.6|是|
-|dde-control-center|是|否|5.5.11.5|否|
+|dde-control-center|是|否|5.5.11.5|是|
 |dde-device-formatter|是|是|0.0.1.12|是|
 |dde-dock|是|否|5.5.9|否|
 |dde-file-manager|是|是|5.5.3|是|
