@@ -1,0 +1,1 @@
+xfuzz fuzz ./build/dde-dock-xfuzz -pdde -mdock
