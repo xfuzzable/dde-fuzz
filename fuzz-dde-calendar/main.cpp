@@ -9,7 +9,7 @@
 
 //自定义转换函数，输入是任意数量的支持的类型（包括其他自定义类型）
 QString to_qstring(std::string &s) {
-  return QString(s.c_str());
+    return QString(s.c_str());
 }
 
 XFUZZ_CUSTOM_CONVERTER(to_qstring);
