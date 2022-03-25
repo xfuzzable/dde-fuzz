@@ -5,22 +5,16 @@
 #include "utils.h"
 #include <QJsonDocument>
 #include <QJsonArray>
+#include "xfuzz.h"
 
+//自定义转换函数，输入是任意数量的支持的类型（包括其他自定义类型）
+QString to_qstring(std::string &s) {
+  return QString(s.c_str());
+}
 
+XFUZZ_CUSTOM_CONVERTER(to_qstring);
 
-extern "C" void xfuzz_test_one(char *Data, size_t DataSize) {
-    if (DataSize == 0){
-        return;
-    }
-    //qInfo() << Data;
-    QByteArray qba = QByteArray(Data, DataSize);
-    QString s(qba);
-
-// int main(int argc, char* argv[]){
-//     if (argc > 2){
-//         return 0;
-//     }
-//     QString s(argv[1]);
+void test(QString &s) {
     qInfo() << s;
     Utils * ut = new Utils();
     auto qdt = ut->fromconvertData(s);
@@ -32,8 +26,11 @@ extern "C" void xfuzz_test_one(char *Data, size_t DataSize) {
     auto qs1 = ut->toconvertData(qdt1);
     qInfo() << qs;
     delete ut;
-
-    //return 0;
 }
+
+XFUZZ_TEST_ENTRYPOINT(test);
+
+
+
 
 
