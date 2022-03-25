@@ -2,23 +2,24 @@
 #include <QString>
 #include <QDebug>
 #include <QByteArray>
-
+#include "xfuzz.h"
 using namespace dcc::widgets;
 
-
-extern "C" void xfuzz_test_one(char *Data, size_t DataSize) {
-    if (DataSize == 0){
-        return;
-    }else{
-        const QByteArray databuf = QByteArray(Data, DataSize);
-        QString s(databuf);
-        BasicListModel *obj = new BasicListModel;
-        obj->appendOption(s, s);
-        obj->rowCount(obj->index(0));
-        obj->data(obj->index(0), BasicListModel::ItemSizeRole);
-        obj->setSelectedIndex(obj->index(0));
-        obj->setHoveredIndex(obj->index(0));
-        obj->clear();
-        delete obj;
-    }
+QString to_qstring(std::string &s) {
+    return QString(s.c_str());
 }
+
+XFUZZ_CUSTOM_CONVERTER(to_qstring);
+
+void testBasicListModel(QString &s1, QString &s2, int countIndex, int selectedIndex, int hoveredIndex) {
+    BasicListModel *obj = new BasicListModel;
+    obj->appendOption(s1, s2);
+    obj->rowCount(obj->index(countIndex));
+    obj->data(obj->index(0), BasicListModel::ItemSizeRole);
+    obj->setSelectedIndex(obj->index(selectedIndex));
+    obj->setHoveredIndex(obj->index(hoveredIndex));
+    obj->clear();
+    delete obj;
+}
+
+XFUZZ_TEST_ENTRYPOINT(testBasicListModel);

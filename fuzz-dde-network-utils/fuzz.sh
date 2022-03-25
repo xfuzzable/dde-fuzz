@@ -1,1 +1,1 @@
-xfuzz fuzz ./build/dde-network-xfuzz -pdde -mnetwork --no-ui 
+xfuzz fuzz ./build/dde-network-xfuzz -pdde -mnetwork
