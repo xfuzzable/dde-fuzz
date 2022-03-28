@@ -1,0 +1,1 @@
+xfuzz fuzz ./build/dde-printer-xfuzz -pdde -mprinter
