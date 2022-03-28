@@ -1,0 +1,1 @@
+xfuzz fuzz ./build/dde-qt-dbus-factory-xfuzz -pdde -mqt-dbus-factory

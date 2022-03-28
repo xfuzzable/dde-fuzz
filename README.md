@@ -32,7 +32,7 @@ cd fuzz-package-name
 |dde-network-utils|是|是|5.4.13|是|
 |dde-polkit-agent|是|是|5.5.3|是|
 |dde-printer|是|是|0.9.2|是|
-|dde-qt-dbus-factory|未知|未知|5.5.5|否|
+|dde-qt-dbus-factory|是|是|5.5.5|是|
 |dde-session-shell|未知|未知|5.5.9|否|
 |dde-session-ui|未知|未知|5.5.6|否|
 |dde-wayland|未知|未知|1.0.0|否|
