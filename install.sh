@@ -19,15 +19,33 @@ apps=(dde-calendar
     dde-wayland
 )
 
-if [ $# == 0 ]
-then
+function install_all(){
     for app in ${apps[*]};
     do 
         echo "install $app"
         apt source $app -y
         apt build-dep $app -y
     done
-else
+}
+
+if test ${#@} == 0
+then
+    echo "Please enter one or more app names."
+    echo "The app names that can be entered are as follows"
+    for app in ${apps[*]};
+    do
+        echo "$app"
+    done
+    read -p "Whether to install all?[y/n]" yn
+    case $yn in
+    [Yy]* ) echo "install all"; install_all;;
+    [Nn]* ) echo "exit"; exit;;
+    * ) echo "Please answer y or n.";;
+    esac
+fi
+
+if [ $# != 0 ]
+then
     for app in "$@";
     do
         echo "install $app"
