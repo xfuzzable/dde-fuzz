@@ -1,0 +1,1 @@
+xfuzz fuzz ./build/dde-kwin-xfuzz -pdde -mkwin
