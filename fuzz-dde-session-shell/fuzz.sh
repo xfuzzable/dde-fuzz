@@ -1,0 +1,1 @@
+xfuzz fuzz ./build/dde-session-shell-xfuzz -pdde -msession-shell
