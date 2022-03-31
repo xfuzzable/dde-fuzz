@@ -35,4 +35,3 @@ cd fuzz-package-name
 |dde-qt-dbus-factory|是|是|5.5.5|是|
 |dde-session-shell|是|是|5.5.9|是|
 |dde-session-ui|是|是|5.5.6|是|
-|dde-wayland|未知|未知|1.0.0|否|
