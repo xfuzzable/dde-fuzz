@@ -1,8 +1,9 @@
 build/
-dde-*
+dde-*/
+dde-*.xz 
+dde-*.dsc
 xfuzz-test-*
 *.pri
 __pychche__
 *.pyc
 .vscode
-.build
